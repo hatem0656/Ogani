@@ -4,6 +4,28 @@
 
 @layer components {
   .number {
-    @apply bg-primary text-2xs font-semibold text-white w-[13px] h-[13px] rounded-full absolute bottom-3 left-[16.5px] flex items-center justify-center;
+    @apply bg-primary text-2xs font-semibold text-white w-[13px] h-[13px] 
+    rounded-full absolute bottom-3 left-[16.5px] flex items-center justify-center;
   }
+
+  * {
+    @apply transition-colors ease-in duration-100;
+  }
+}
+
+.dropdown {
+  height: 0;
+  border-width: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+.dropdown.active {
+  height: 250px;
+  border-width: 1px;
+}
+
+.center-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }

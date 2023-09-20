@@ -7,7 +7,7 @@ import {
 } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn, FaPinterestP } from "react-icons/fa";
 import Image from "next/image";
-import logo from "../assets/logo.png";
+import logo from "@/assets/logo.png";
 import Link from "next/link";
 
 function NavMenu({ visible }: { visible: boolean }) {

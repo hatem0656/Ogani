@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../assets/logo.png";
+import logo from "@/assets/logo.png";
 import { LuMenu } from "react-icons/lu";
 import { BsFillSuitHeartFill, BsFillBagCheckFill } from "react-icons/bs";
 import NavMenu from "./NavMenu";
@@ -15,12 +15,12 @@ function Nav() {
 
   return (
     <>
-      <div className="md:container flex flex-wrap justify-between items-center py-5 px-7">
-        <div>
+      <div className="md:container flex flex-wrap items-center py-5 px-7">
+        <div className="lg:w-[23%]">
           <Image src={logo} alt="Ogani logo" width={120} priority={false} />
         </div>
 
-        <nav className="lg:flex items-center hidden justify-self-center xl:gap-24 gap-20  ">
+        <nav className="lg:flex items-center hidden xl:gap-24 gap-20 ml-6  mr-auto ">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
 

@@ -17,11 +17,18 @@ const config: Config = {
       },
       container: {
         center: true,
+        padding: {
+          xl: "5rem",
+        },
       },
-      borderRadius: {
-        full: "50%",
-      },
+
       fontSize: {
+        md: [
+          "0.92rem",
+          {
+            lineHeight: "1.25rem",
+          },
+        ],
         mds: [
           "0.85rem",
           {

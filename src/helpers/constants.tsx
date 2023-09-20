@@ -20,3 +20,11 @@ export const navLinks: link[] = [
     href: "/contact",
   },
 ];
+
+export const departments: string[] = [
+  "Fresh Meat",
+  "Vegetables",
+  "Fruit",
+  "Ocean Food",
+  "Fastfood",
+];
