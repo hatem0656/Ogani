@@ -7,7 +7,7 @@ import { useState } from "react";
 function Departments() {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="lg:w-[23%] w-full ">
+    <div className="lg:w-[23%] w-full relative ">
       <div className="w-full flex items-center px-9 lg:px-3 py-[0.8rem] text-white bg-primary ">
         <LuMenu className="text-lg  mr-3" />
         <h3 className="font-bold ">All Departments</h3>
@@ -18,7 +18,7 @@ function Departments() {
       </div>
 
       <ul
-        className={`w-full  flex flex-col px-10 shadow-md bg-white border-gray-200 dropdown ${
+        className={`w-full lg:absolute left-0 top-[50px] flex flex-col px-10 shadow-md bg-white border-gray-200 dropdown ${
           showMenu ? "active" : ""
         }`}
       >

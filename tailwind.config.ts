@@ -43,6 +43,9 @@ const config: Config = {
         ],
       },
     },
+    backgroundImage: {
+      "hero-banner": "url('../assets/imgs/banner.webp')",
+    },
   },
   plugins: [],
 };

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/imgs/logo.webp";
 import { LuMenu } from "react-icons/lu";
 import { BsFillSuitHeartFill, BsFillBagCheckFill } from "react-icons/bs";
 import NavMenu from "./NavMenu";
@@ -17,10 +17,10 @@ function Nav() {
     <>
       <div className="md:container flex flex-wrap items-center py-5 px-7">
         <div className="lg:w-[23%]">
-          <Image src={logo} alt="Ogani logo" width={120} priority={false} />
+          <Image src={logo} alt="Ogani logo" width={120} priority />
         </div>
 
-        <nav className="lg:flex items-center hidden xl:gap-24 gap-20 ml-6  mr-auto ">
+        <nav className="lg:flex items-center hidden xl:gap-24 gap-20 ml-6 mr-auto ">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -39,7 +39,7 @@ function Nav() {
         </nav>
 
         <LuMenu
-          className="text-3xl text-dark cursor-pointer lg:hidden block"
+          className="text-3xl text-dark cursor-pointer ml-auto lg:hidden block"
           onClick={() => setShowMenu(true)}
         />
 
